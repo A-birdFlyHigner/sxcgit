@@ -114,4 +114,5 @@ MongoUtil.prototype.findOneAndUpdate = function (collectionName, doc, setDoc, pr
 	})
 };
 
-module.exports = new MongoUtil("MongoText");
+module.exports = new MongoUtil("MongoText");//MongoText为mongoDb的目录名	
+})
