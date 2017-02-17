@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font-family: Arial,"Hiragino Sans GB","冬青黑","Microsoft YaHei","微软雅黑",SimSun,Helvetica,Tahoma,sans-serif;
+			font-size: 14px;
+			text-align: center;
+			text-decoration: none;
+		}
+		.container{
+			line-height:100%;
+			font-family:微软雅黑;
+			font-size: 136px;
+			color: white;
+
+		}
+		.box1{
+
+			background: skyblue;
+		}
+		.box2{
+
+			background: green;
+		}
+		.box3{
+
+			background: greenyellow;
+		}
+		.box4{
+
+			background: orange;
+			}
+		.banner_navUl{
+			right: 5%;
+		}
+		.liHover:hover a{
+			transform: scale(2.5); 
+		}
+		.banner_nav{
+			width: 4px;
+			height: 4px;
+			background: white;			
+			transition: linear 0.1s;
+		}
+		.banner_navChose{
+			height: 11px;
+			width: 11px;	
+		}
+	</style>
+	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+</head>
+<body>
+		<div class="container box1">1</div>
+		<div class="container box2">2</div>
+		<div class="container box3">3</div>
+		<div class="container box4">4</div>
+	<script type="text/javascript" src="PageScorller.js"></script>
+	<script type="text/javascript">
+	// 例：
+			new PageScorll(".container",{scorllTime:1000,})
+	</script>
+
+</body>
+</html>
