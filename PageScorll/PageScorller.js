@@ -8,7 +8,7 @@
 		//4.提供banner_nav(分页器样式),选中样式banner_navChose(分页器选中样式)，liHover(分页器鼠标悬停样式)，
 		//不建议修改布局，如有需要建议使用!important修改
 		//PageScorll1.0使用方式到此结束，更多功能请期待PageScorll2.0
-		//(此句纯属yy，权当搞笑~~思路有局限，欢迎指正，技术博客地址：http://www.cnblogs.com/sxcflyhigher/)
+		//(此句纯属yy，权当搞笑~~新手思路有局限，不妥或可优化之处欢迎指正，技术博客地址：http://www.cnblogs.com/sxcflyhigher/)
 		
 var PageScorll=function(selector,objUser){
 	this.init(selector,objUser)
@@ -42,7 +42,6 @@ PageScorll.prototype.init = function(selector,objUser){
 		 	if (!objUser) {
 		 		var nav=false;
 		 		var scorllTimex=600;
-		 		var banner_navPosx="right"
 		 	}else {
 		 		//处理分页器
 			 	var nav=false;
@@ -60,7 +59,7 @@ PageScorll.prototype.init = function(selector,objUser){
 			 	//分页器位置
 			 	var banner_navPosx="right";
 			 	if (objUser.banner_navPos) {
-			 		banner_navPos=objUser.banner_navPos
+			 		banner_navPosx=objUser.banner_navPos
 			 	}		 	
 		 	};		 	
 		 	this.userObj={
