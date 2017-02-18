@@ -72,6 +72,9 @@ PageScorll.prototype.init = function(selector,objUser){
 	PageScorllx.prototype.init=function(jQuery,selector,userObj){	
 		$('html').css({width:'100%',height: '100%',overflow:'hidden'});
 		$('body').css({width:'100%',height:'100%',marginLeft: 'auto',marginTop: 'auto'});
+		if ($("body").css('overflow')) {
+		 	$("body").css({overflow:"visible"});
+		 }	
 		if (this.oul) {
 			if (this.userObj.banner_navPos==="left") {
 				this.oul.style.cssText='position: fixed;'
