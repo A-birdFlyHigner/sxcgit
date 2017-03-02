@@ -167,7 +167,7 @@ PageScorll.prototype.init = function(selector,objUser){
 			if (that.pagenum<=that.selector.length-1){						
 					this.$htmlbody.animate({scrollTop:$(pageName).eq(pagenum).offset().top},scorllTime,"swing", function () {
 										that.isScroll=false;												
-									});
+				});
 			}
 		}
 	};
